@@ -19,3 +19,12 @@ echo "The forecasted temperature for noon tomorrow for $city : $fc_temp C"
 
 #The first line uses a combination of head and tail to narrow down to the line containing tomorrow's noon forecast temperature. grep and cut are employed to isolate and format 
 #the temperature information, and, the numeric part of the temperature is captured using grep -Eo.
+
+#Assign Country and City to variable TZ
+TZ='Morocco/Casablanca'
+
+# Use command substitution to store the current day, month, and year in corresponding shell variables:
+day=$(TZ='Morocco/Casablanca' date -u +%d) 
+month=$(TZ='Morocco/Casablanca' date +%m)
+year=$(TZ='Morocco/Casablanca' date +%Y)
+
