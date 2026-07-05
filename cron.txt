@@ -1,0 +1,2 @@
+crontab -e
+0 6 * * * ./rx_poc.sh
